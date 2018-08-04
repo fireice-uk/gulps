@@ -334,7 +334,7 @@ public:
 			}
 			catch(const std::exception& ex)
 			{
-				std::cout << "!!! PANIC, error writing to a log file! Your disk is probably full! " << ex.what() << std::endl;
+				std::cerr << "!!! PANIC, error writing to a log file! Your disk is probably full! " << ex.what() << std::endl;
 			}
 		}
 
